@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+*{
+  font-family: lobster;
+}
+
+body {
+  background-color: #17324f;
+ height: 100vh;
+ overflow: hidden;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+.prueba{
+  position: relative;
+  width: 400px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+ /*height: 100vh;*/
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+pre {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00ff0a;
+}
+
+pre span:first-child {
+  color: rgb(255, 255, 0);
+}
+
+pre span:last-child {
+  color: #795548;
+}
+
+.snow {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-sizing: content-box;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+}
+
+
+input{
+  text-transform: uppercase;
+}
+.snow-floor {
+  width: 100vw;
+  background-color: #fff;
+  border-radius: 20% 20% 0 0;
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  flex-flow: column;
+  align-items: center;
+}
+
+.trineo{
+  position: absolute;
+  left: -350px;
+  animation: trineo 15s 10s infinite linear ;
+  z-index: -1;
+}
+
+@keyframes trineo {
+  0%{ left: -350px;
+      top:43%;
+  }
+  100%{
+    left: 100%;
+    top: 0%;
+    rotate: -26deg;
+  }
+}
+
+img{
+  width: 300px;
+}
+form{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+form * {
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 5px;
+}
+
+.title {
+  color: #fff;
+  font-weight: lighter;
+}
+
+@keyframes fall {
+  0% {
+    top: -100px;
+  }
+
+  100% {
+    top: 100vh;
+  }
+}
